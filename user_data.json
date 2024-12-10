@@ -2,9 +2,5 @@
     "example_user": {
         "expiry_date": "2024-12-31",
         "device_id": "None"
-    },
-    "test": {
-        "expiry_date": "2024-12-17",
-        "device_id": "None"
     }
 }
