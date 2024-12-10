@@ -2,5 +2,9 @@
     "example_user": {
         "expiry_date": "2024-12-31",
         "device_id": "None"
+    },
+    "nigg": {
+        "expiry_date": "2025-11-08",
+        "device_id": "None"
     }
 }
