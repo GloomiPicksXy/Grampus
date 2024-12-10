@@ -10,5 +10,9 @@
     "nigga1": {
         "expiry_date": "2024-12-30",
         "device_id": "3DCB2B43D427FFE7"
+    },
+    "nigga2": {
+        "expiry_date": "2025-01-02",
+        "device_id": "a5b5ad2269a9c5ad"
     }
 }
