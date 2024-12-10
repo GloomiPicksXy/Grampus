@@ -2,5 +2,9 @@
     "kupal": {
         "expiry_date": "2025-10-06",
         "device_id": "4223866794"
+    },
+    "nig": {
+        "expiry_date": "2025-03-19",
+        "device_id": "a5b5ad2269a9c5ad"
     }
 }
