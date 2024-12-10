@@ -4,10 +4,3 @@
         "device_id": "4223866794"
     }
 }
-
-{
-  "Gloom-60d-97f43g82-keyauth": {
-    "expiry_date": "12/31/24",  -- Or "deactivated" if the key is deactivated
-    "device_id": "a5b5ad2269a9c5ad"
-  }
-}
