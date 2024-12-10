@@ -1,6 +1,10 @@
 {
-  "example_user": {
-    "expiry_date": "2024-12-31",
-    "device_id": "None"
-  }
+    "example_user": {
+        "expiry_date": "2024-12-31",
+        "device_id": "None"
+    },
+    "kup": {
+        "expiry_date": "2024-12-15",
+        "device_id": "None"
+    }
 }
