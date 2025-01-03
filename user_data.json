@@ -1,1 +1,7 @@
-{"api_key_1": {"duration": "30 days", "device_id": "12345"}, "nigg": {"duration": "", "device_id": null}, "l": {"duration": "20 days", "device_id": null}}
+{
+  "whitelisted_ids": [
+    "bae2e136",
+    "device_id_2",
+    "device_id_3"
+  ]
+}
