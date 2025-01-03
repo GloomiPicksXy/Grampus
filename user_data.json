@@ -1,7 +1,3 @@
 {
-  "whitelisted_ids": [
-    "bae2e136",
-    "device_id_2",
-    "device_id_3"
-  ]
+  "allowed_devices": ["bae2e136", "ABCDEFGH"]
 }
