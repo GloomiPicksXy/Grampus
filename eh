@@ -15,8 +15,12 @@ local crosshairOpacity = config.crosshairOpacity or 0
 local crosshairSize = config.crosshairSize or 4
 local crosshairThickness = config.crosshairThickness or 2
 local fovColor = config.fovColor or Color3.fromRGB(0, 200, 255)
+local fovTransparency = config.fovTransparency or 0.3
+local fovFilled = config.fovFilled or false
 local defaultBoxColor = config.defaultBoxColor or Color3.fromRGB(255, 105, 180)
 local lockedBoxColor = config.lockedBoxColor or Color3.fromRGB(0, 255, 120)
+local boxTransparency = config.boxTransparency or 0.5
+local boxFilled = config.boxFilled or false
 
 -- State
 local boxes = {}
@@ -31,8 +35,8 @@ fovCircle.Color = fovColor
 fovCircle.Thickness = 2
 fovCircle.NumSides = 20
 fovCircle.Radius = aimbotFOV
-fovCircle.Filled = true
-fovCircle.Transparency = 0.3
+fovCircle.Filled = fovFilled
+fovCircle.Transparency = fovTransparency
 fovCircle.Visible = true
 
 -- Crosshair
@@ -100,8 +104,8 @@ local function createBox()
     box.Visible = false
     box.Color = defaultBoxColor
     box.Thickness = 2
-    box.Transparency = 0.5
-    box.Filled = true
+    box.Transparency = boxTransparency
+    box.Filled = boxFilled
     return box
 end
 
@@ -184,7 +188,6 @@ table.insert(connections, UserInputService.InputEnded:Connect(function(input)
     end
 end))
 
--- Cleanup
 table.insert(connections, Players.PlayerRemoving:Connect(function(player)
     if boxes[player] then
         boxes[player]:Remove()
@@ -226,5 +229,4 @@ table.insert(connections, RunService.RenderStepped:Connect(function()
     end
 end))
 
--- Init
 initializeCrosshair()
